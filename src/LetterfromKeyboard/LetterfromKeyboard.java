@@ -1,7 +1,6 @@
 package LetterfromKeyboard;
 import java.util.Scanner;
 
-
 public class LetterfromKeyboard {
     public static void main(String[] args){
         // Создан объект scan для чтения ввода из консоли
@@ -30,8 +29,12 @@ public class LetterfromKeyboard {
             // если введенная буква есть в строке keyboard, то
             // находим индекс буквы слева из зацикленной строки keyboard
             int leftIndex = (index - 1 + keyboard.length()) % keyboard.length();
+            //если index = 0 (первый символ из строки keyboard), мы получаем последний символ строки
+            // для остальных берем предыдущий символ
+
             // Выводим букву слева от введенной
             System.out.println(keyboard.charAt(leftIndex));
+            // Выводим букву слева от введенной
         }
         scan.close();
     }
