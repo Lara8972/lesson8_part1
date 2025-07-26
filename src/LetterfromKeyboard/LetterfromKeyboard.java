@@ -34,7 +34,7 @@ public class LetterfromKeyboard {
 
             // Выводим букву слева от введенной
             System.out.println(keyboard.charAt(leftIndex));
-            // Выводим букву слева от введенной
+
         }
         scan.close();
     }
