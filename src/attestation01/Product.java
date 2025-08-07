@@ -1,11 +1,8 @@
 package attestation01;
 
-import java.util.ArrayList;
 import java.util.Objects;
-import java.util.Scanner;
 
-
-class Product {
+public class Product {
     private String name;  // Название продукта
     private double cost;  // Стоимость продукта
 
@@ -21,7 +18,7 @@ class Product {
     }
 
     // новое Имя
-        public void setName(String name) {
+    public void setName(String name) {
         if (name == null || name.trim().isEmpty()) {
             System.out.println("Имя не может быть пустым");
             return;
@@ -49,9 +46,9 @@ class Product {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Product product = (Product) o;
-        return Double.compare(product.cost, cost) == 0 &&
-                Objects.equals(name, product.name);
+        homework06.Product product = (homework06.Product) o;
+        return Double.compare(product.getCost(), cost) == 0 &&
+                Objects.equals(name, product.getName());
     }
 
     //Переопределение hashCode
