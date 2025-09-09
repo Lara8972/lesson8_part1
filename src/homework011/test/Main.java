@@ -11,7 +11,7 @@ public class Main extends Car {// класс Main наследник класс�
 
     public static void main(String[] args) {
         List<Car> cars = new ArrayList<>();
-        // Создаю список автомобилей
+        // Создаю список автомобилей - коллекцию
         cars = Arrays.asList(
                 new Car("a123me", "Mercedes", "White", 0, 8300000),
                 new Car("b873of", "Volga", "Black", 0, 673000),
